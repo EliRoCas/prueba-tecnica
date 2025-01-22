@@ -54,6 +54,100 @@ header h1 {
   color: #fff;
 }
 
+#footer {
+  background-color: #2b1712;
+  border-top-left-radius: 3.5rem;
+  border-top-right-radius: 3.5rem;
+  height: 100%;
+  background-image: url(../assets/background-coffee.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+section.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 1;
+}
+section.footer-content h2 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  color: #fff;
+  text-align: center;
+}
+section.footer-content .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 1rem 0 0 0;
+  gap: 0.5rem;
+}
+section.footer-content .footer-logo figure {
+  margin: 0;
+}
+section.footer-content h3 {
+  font-size: 1rem;
+  color: #fff;
+}
+section.footer-content .sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.footer-content .sign-up label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+section.footer-content .sign-up input {
+  padding: 0.5rem;
+  border-radius: 4rem;
+  border: 1px solid #847571;
+  background-color: transparent;
+  padding: 1.5rem 5rem;
+  margin: 0 2rem;
+}
+section.footer-content .sign-up .btn-suscribe {
+  margin: 1rem;
+  padding: 1.5rem 8rem;
+  background-color: #ddb66f;
+  font-size: 1rem;
+}
+section.footer-content .sign-up p {
+  color: #fff;
+  font-size: 0.813rem;
+}
+section.footer-content .sign-up p span {
+  color: #ddb66f;
+}
+section.footer-content .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 3rem 0 1rem 0;
+}
+section.footer-content .social-media i {
+  font-size: 1.25rem;
+  color: #fff;
+}
+section.footer-content p {
+  color: #847571;
+  font-size: 0.813rem;
+  text-align: center;
+  line-height: 1.7;
+}
+
 #home {
   display: flex;
   justify-content: center;
@@ -199,7 +293,7 @@ section#steps::after {
   position: absolute;
   top: 8rem;
   width: 100%;
-  height: 100%;
+  height: 90%;
   background-image: url("../assets/background-coffee.png");
   background-size: inherit;
   background-repeat: no-repeat;
@@ -270,6 +364,35 @@ section#steps figure img.step-three {
   width: 80%;
   height: 80%;
   object-fit: contain;
+}
+
+.fifth-content {
+  background-color: #ffefeb;
+  border-top-left-radius: 3.5rem;
+  border-top-right-radius: 3.5rem;
+}
+
+section#testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+section#testimonial h2 {
+  font-size: 1.75rem;
+  color: #2b1712;
+  text-align: center;
+  padding: 1rem;
+}
+section#testimonial figure {
+  margin: 0;
+}
+section#testimonial figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
 
 .biggest-text {

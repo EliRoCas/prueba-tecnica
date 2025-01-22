@@ -1,0 +1,31 @@
+.fifth-content {
+  background-color: $body-color;
+  border-top-left-radius: 3.5rem;
+  border-top-right-radius: 3.5rem;
+}
+
+section#testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin-top: 1rem;
+
+  h2 {
+    font-size: map-get($mobile-font-size, big);
+    color: $first-color-alt;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  figure {
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+  }
+}

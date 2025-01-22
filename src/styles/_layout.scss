@@ -13,3 +13,110 @@ header {
     color: $white-color;
   }
 }
+
+#footer {
+  background-color: $first-color-alt;
+  border-top-left-radius: 3.5rem;
+  border-top-right-radius: 3.5rem;
+  height: 100%;
+
+  background-image: url(../assets/background-coffee.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+section.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 1;
+
+  h2 {
+    margin-top: 2rem;
+    font-size: map-get($mobile-font-size, big);
+    color: $white-color;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0 0 0;
+    gap: 0.5rem;
+
+    figure {
+      margin: 0;
+    }
+  }
+
+  h3 {
+    font-size: map-get($mobile-font-size, h3);
+    color: $white-color;
+  }
+
+  .sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    input {
+      padding: 0.5rem;
+      border-radius: 4rem;
+      border: 1px solid $text-color-light;
+      background-color: transparent;
+      padding: 1.5rem 5rem;
+      margin: 0 2rem;
+    }
+
+    .btn-suscribe {
+      margin: 1rem;
+      padding: 1.5rem 8rem;
+      background-color: $second-color;
+      font-size: map-get($mobile-font-size, h3);
+    }
+
+    p {
+      color: $white-color;
+      font-size: map-get($mobile-font-size, small);
+
+      span {
+        color: $second-color;
+      }
+    }
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 3rem 0 1rem 0;
+
+    i {
+      font-size: map-get($mobile-font-size, h2);
+      color: $white-color;
+    }
+  }
+
+  p {
+    color: $text-color-light;
+    font-size: map-get($mobile-font-size, small);
+    text-align: center;
+    line-height: 1.7;
+  }
+}
