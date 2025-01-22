@@ -1,0 +1,60 @@
+@import "variables.scss";
+@import "base.scss";
+@import "layout.scss";
+@import "home.scss";
+@import "offers.scss";
+@import "about.scss";
+@import "steps.scss";
+
+.biggest-text {
+  font-size: map-get($mobile-font-size, biggest);
+}
+.big-text {
+  font-size: map-get($mobile-font-size, big);
+}
+h1 {
+  font-size: map-get($mobile-font-size, h1);
+}
+h2 {
+  font-size: map-get($mobile-font-size, h2);
+}
+h3 {
+  font-size: map-get($mobile-font-size, h3);
+}
+h4 {
+  font-size: map-get($mobile-font-size, h4);
+}
+.small-text {
+  font-size: map-get($mobile-font-size, small);
+}
+
+.smaller-text {
+  font-size: map-get($mobile-font-size, smaller);
+}
+
+@media (min-width: 768px) {
+  .biggest-text {
+    font-size: map-get($desktop-font-size, biggest);
+  }
+  .big-text {
+    font-size: map-get($desktop-font-size, big);
+  }
+  h1 {
+    font-size: map-get($desktop-font-size, h1);
+  }
+  h2 {
+    font-size: map-get($desktop-font-size, h2);
+  }
+  h3 {
+    font-size: map-get($desktop-font-size, h3);
+  }
+  h4 {
+    font-size: map-get($desktop-font-size, h4);
+  }
+  .small-text {
+    font-size: map-get($desktop-font-size, small);
+  }
+  .smaller-text {
+    font-size: map-get($desktop-font-size, smaller);
+  }
+}

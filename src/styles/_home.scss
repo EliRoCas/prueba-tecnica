@@ -1,0 +1,51 @@
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin: 0 1rem;
+
+  .home-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+    h2 {
+      margin: 0;
+      border: 0;
+      font-size: map-get($mobile-font-size, biggest);
+      color: $white-color;
+    }
+
+    .home-icon {
+      width: 3.4rem;
+      margin-left: 1rem;
+    }
+  }
+  h3 {
+    font-family: $secondary-font-family;
+    color: $second-color;
+  }
+  p {
+       color: $white-color;
+  }
+
+  .btn-home {
+    margin: 1rem 0;
+    background-color: $second-color;
+    cursor: pointer;
+    &:hover {
+      background-color: $first-color-light;
+    }
+    font-size: map-get($mobile-font-size, h3);
+    color: #000;
+  }
+
+  figure .home-img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+.second-content {
+  background-color: $first-color;
+  border-top-left-radius: 3.5rem;
+  border-top-right-radius: 3.5rem;
+}
+section#products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1rem;
+
+  .btn-scroll {
+    background-color: $first-color-alt;
+    color: $white-color;
+  }
+
+  p {
+    color: $white-color;
+  }
+
+  .coffe-types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    h3,
+    p {
+      color: $white-color;
+      font-size: map-get($mobile-font-size, h2);
+      margin: 0;
+    }
+
+    p {
+      font-family: $primary-font-family;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// Color Palette
+$first-color: #492d26;
+$first-color-alt: #2b1712;
+$first-color-light: #65463e;
+$second-color: #ddb66f;
+$title-color: #2e2624;
+$text-color: #5b4c48;
+$text-color-light: #847571;
+$white-color: #fff;
+$body-color: #ffefeb;
+$containe-color: #fff;
+
+// Fonts
+$primary-font-family: "Pacifico", serif;
+$primary-font-weight: 400;
+$primary-font-style: normal;
+
+$secondary-font-family: "Roboto", serif;
+$secondary-font-weight: 400;
+$secondary-font-style: normal;
+
+//font-size-mobile
+$mobile-font-size: (
+  biggest: 2.75rem,
+  big: 1.75rem,
+  h1: 1.5rem,
+  h2: 1.25rem,
+  h3: 1rem,
+  h4: 0.938rem,
+  small: 0.813rem,
+  smaller: 0.75rem,
+);
+
+// font-size-desktop
+$desktop-font-size: (
+  biggest: 4.5rem,
+  big: 3rem,
+  h1: 2.25rem,
+  h2: 1.25rem,
+  h3: 1rem,
+  h4: 1.25rem,
+  small: 0.875rem,
+  smaller: 0.813rem,
+);

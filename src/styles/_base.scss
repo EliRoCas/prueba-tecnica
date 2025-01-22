@@ -1,0 +1,39 @@
+html,
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: $body-color;
+  font-family: $secondary-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary-font-family;
+  font-weight: $primary-font-weight;
+  font-style: $primary-font-style;
+  color: $title-color;
+}
+
+button {
+  padding: 1rem 2.15rem;
+  border-radius: 4rem;
+}
+
+p {
+  font-size: map-get($mobile-font-size, h3);
+  padding: 0.2rem;
+  text-align: center;
+  line-height: 1.7;
+}

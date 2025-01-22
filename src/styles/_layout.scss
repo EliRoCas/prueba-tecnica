@@ -1,0 +1,15 @@
+div#first-content {
+  background: linear-gradient(to bottom, $first-color, $first-color-alt);
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  border-bottom: 2px dashed $text-color-light;
+
+  h1 {
+    color: $white-color;
+  }
+}
