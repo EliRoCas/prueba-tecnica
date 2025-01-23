@@ -1,11 +1,12 @@
 @import "variables.scss";
 @import "base.scss";
-@import "layout.scss";
+@import "header.scss";
 @import "home.scss";
 @import "offers.scss";
 @import "about.scss";
 @import "steps.scss";
 @import "testimonial.scss";
+@import "footer.scss";
 
 .biggest-text {
   font-size: map-get($mobile-font-size, biggest);
