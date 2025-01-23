@@ -46,14 +46,63 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0;
   border-bottom: 2px dashed #847571;
 }
-header h1 {
+header .header-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .header-logo figure {
+  margin: 0;
+}
+header .header-logo h1 {
   color: #fff;
 }
+header ul.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+header ul.nav-links li {
+  padding: 0.2rem;
+}
+header ul.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Pacifico", serif;
+  font-size: 1rem;
+}
+header ul.nav-links li a:hover {
+  color: #ddb66f;
+}
 
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.25rem;
+  }
+  header ul.nav-links li a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 728px) {
+  header {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  header h1 {
+    font-size: 2.25rem;
+  }
+  header ul.nav-links li {
+    padding: 0.5rem 2rem;
+  }
+  header ul.nav-links li a {
+    font-size: 1.25rem;
+  }
+}
 #home {
   display: grid;
   grid-template-columns: 1fr;

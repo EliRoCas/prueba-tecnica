@@ -5,12 +5,76 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0;
   border-bottom: 2px dashed $text-color-light;
 
-  h1 {
-    color: $white-color;
+  .header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+      margin: 0;
+    }
+    h1 {
+      color: $white-color;
+    }
+  }
+
+  ul.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+
+    li {
+      padding: 0.2rem;
+      a {
+        color: $white-color;
+        text-decoration: none;
+        font-family: $primary-font-family;
+        font-size: map-get($mobile-font-size, h3);
+
+        &:hover {
+          color: $second-color;
+        }
+      }
+    }
   }
 }
 
+@media (min-width: 768px) {
+  header {
+    h1 {
+      font-size: map-get($desktop-font-size, h1);
+    }
+
+    ul.nav-links {
+      li {
+        a {
+          font-size: map-get($desktop-font-size, h3);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 728px) {
+  header {
+    flex-direction: row;
+    gap: 2rem;
+    h1 {
+      font-size: map-get($desktop-font-size, h1);
+    }
+
+    ul.nav-links {
+      li {
+        padding: 0.5rem 2rem;
+        a {
+          font-size: map-get($desktop-font-size, h2);
+        }
+      }
+    }
+  }
+}
